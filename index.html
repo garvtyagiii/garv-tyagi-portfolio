@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Garv Tyagi — Aspiring AI/ML Engineer & Web Developer. B.Tech CSE AI-ML student." />
+  <title>Garv Tyagi | Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <a href="#home" class="nav-brand" aria-label="Garv Tyagi — Home">
+        <span class="brand-text">Garv Tyagi</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-links" id="nav-links" role="list">
+          <li><a href="#home"     class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#about"    class="nav-link"        data-section="about">About</a></li>
+          <li><a href="#skills"   class="nav-link"        data-section="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link"        data-section="projects">Projects</a></li>
+          <li><a href="#contact"  class="nav-link"        data-section="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fas fa-sun"  aria-hidden="true"></i>
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO  (3-column on desktop)
+    ══════════════════════════════════════ -->
+    <section class="hero" id="home" aria-labelledby="hero-name">
+      <div class="hero-grid">
+
+        <!-- Col 1 — Text -->
+        <div class="hero-text">
+          <p class="greeting">Hi, I'm</p>
+          <h1 class="hero-name" id="hero-name">Garv Tyagi</h1>
+          <h2 class="hero-sub">Aspiring AI/ML Engineer &amp; Web Developer</h2>
+          <p class="hero-bio">
+            I am a B.Tech CSE AI-ML student passionate about artificial intelligence,
+            technology and web applications. I love learning new skills and solving
+            real-world problems.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-outline">Contact Me</a>
+          </div>
+
+          <div class="hero-socials" aria-label="Social links">
+            <a href="https://github.com/garvtyagiii"   class="soc-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/garv-tyagi-013a60383/" class="soc-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:tyagigarv90@gmail.com" class="soc-link" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 — Photo -->
+        <div class="hero-photo-wrap" aria-hidden="true">
+          <div class="photo-glow"></div>
+          <img
+            src="images/profile.jpg"
+            alt="Garv Tyagi"
+            class="hero-photo"
+            id="profile-img"
+            onerror="this.style.display='none';document.getElementById('photo-fallback').style.display='flex';"
+          />
+          <div class="photo-fallback" id="photo-fallback" role="img" aria-label="Profile photo placeholder">
+            <i class="fas fa-user"></i>
+            <span>Add profile.jpg<br>to images/</span>
+          </div>
+        </div>
+
+        <!-- Col 3 — About + Skills panels -->
+        <div class="hero-side">
+
+          <!-- About panel -->
+          <div class="side-panel" id="about" aria-labelledby="about-title">
+            <h3 class="panel-title" id="about-title">
+              <i class="fas fa-user-astronaut panel-icon" aria-hidden="true"></i>
+              About Me
+            </h3>
+            <p class="panel-body">
+              I'm a B.Tech CSE AI-ML student interested in artificial intelligence,
+              technology and web development. I enjoy exploring new tools, building
+              projects and continuously learning to improve my skills. I am passionate
+              about creating meaningful solutions and turning ideas into real applications.
+            </p>
+            <div class="about-cards">
+              <div class="acard">
+                <i class="fas fa-user-graduate acard-icon" aria-hidden="true"></i>
+                <span class="acard-label">Student</span>
+                <span class="acard-val">B.Tech CSE AI-ML</span>
+              </div>
+              <div class="acard">
+                <i class="fas fa-eye acard-icon" aria-hidden="true"></i>
+                <span class="acard-label">Interests</span>
+                <span class="acard-val">AI/ML, Web Dev</span>
+              </div>
+              <div class="acard">
+                <i class="fas fa-bullseye acard-icon" aria-hidden="true"></i>
+                <span class="acard-label">Goal</span>
+                <span class="acard-val">Build, Learn, Solve</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skills panel -->
+          <div class="side-panel" id="skills" aria-labelledby="skills-title">
+            <h3 class="panel-title" id="skills-title">My Skills</h3>
+            <div class="skills-grid" role="list">
+              <div class="skill-chip" role="listitem">
+                <i class="fab fa-html5 skill-ic ic-html" aria-hidden="true"></i>
+                <span>HTML</span>
+              </div>
+              <div class="skill-chip" role="listitem">
+                <i class="fab fa-css3-alt skill-ic ic-css" aria-hidden="true"></i>
+                <span>CSS</span>
+              </div>
+              <div class="skill-chip" role="listitem">
+                <i class="fab fa-js-square skill-ic ic-js" aria-hidden="true"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-chip" role="listitem">
+                <i class="fab fa-python skill-ic ic-py" aria-hidden="true"></i>
+                <span>Python</span>
+              </div>
+              <div class="skill-chip" role="listitem">
+                <i class="fab fa-github skill-ic ic-git" aria-hidden="true"></i>
+                <span>Git &amp; GitHub</span>
+              </div>
+              <div class="skill-chip" role="listitem">
+                <i class="fas fa-brain skill-ic ic-ai" aria-hidden="true"></i>
+                <span>AI/ML (Basics)</span>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /hero-side -->
+      </div><!-- /hero-grid -->
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════ -->
+    <section class="projects-section section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 class="sec-title" id="projects-title">My Projects</h2>
+        <div class="projects-grid" role="list">
+
+          <!-- Portfolio -->
+          <article class="proj-card" role="listitem">
+            <div class="proj-icon-wrap proj-icon--blue"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+            <h3 class="proj-name">Personal Portfolio</h3>
+            <p class="proj-desc">A responsive portfolio website to showcase my skills and projects.</p>
+            <div class="proj-links">
+              <a href="YOUR_PORTFOLIO_LIVE_URL" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="YOUR_PORTFOLIO_GITHUB_URL" class="btn btn-outline btn-xs" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <!-- To-Do List -->
+          <article class="proj-card planned" role="listitem">
+            <div class="proj-icon-wrap proj-icon--teal"><i class="fas fa-tasks" aria-hidden="true"></i></div>
+            <h3 class="proj-name">To-Do List App</h3>
+            <p class="proj-desc">A simple and clean to-do list using HTML, CSS and JavaScript.</p>
+            <div class="proj-links">
+              <span class="btn btn-ghost btn-xs" aria-disabled="true">Coming Soon</span>
+            </div>
+          </article>
+
+          <!-- Quiz App -->
+          <article class="proj-card planned" role="listitem">
+            <div class="proj-icon-wrap proj-icon--purple"><i class="fas fa-question-circle" aria-hidden="true"></i></div>
+            <h3 class="proj-name">Quiz App</h3>
+            <p class="proj-desc">A basic quiz app with multiple choice questions.</p>
+            <div class="proj-links">
+              <span class="btn btn-ghost btn-xs" aria-disabled="true">Coming Soon</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════ -->
+    <section class="contact-section section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="sec-title" id="contact-title">Contact Me</h2>
+        <p class="sec-sub">Feel free to reach out for collaborations, opportunities or just a friendly hello!</p>
+
+        <div class="contact-row">
+          <a href="mailto:tyagigarv90@gmail.com" class="ccard" aria-label="Email Garv Tyagi">
+            <div class="ccard-icon ccard-icon--email"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <p class="ccard-label">Email</p>
+              <p class="ccard-val">tyagigarv90@gmail.com</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/garv-tyagi-013a60383/" class="ccard" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <div class="ccard-icon ccard-icon--linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
+            <div>
+              <p class="ccard-label">LinkedIn</p>
+              <p class="ccard-val">linkedin.com/in/garv-tyagi</p>
+            </div>
+          </a>
+          <a href="https://github.com/garvtyagiii" class="ccard" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <div class="ccard-icon ccard-icon--github"><i class="fab fa-github" aria-hidden="true"></i></div>
+            <div>
+              <p class="ccard-label">GitHub</p>
+              <p class="ccard-val">github.com/garvtyagiii</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-name">Garv Tyagi</p>
+        <p class="footer-sub">Aspiring AI/ML Engineer &amp; Web Developer</p>
+        <div class="footer-socials">
+          <a href="https://github.com/garvtyagiii"   class="soc-link soc-sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/garv-tyagi-013a60383/" class="soc-link soc-sm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:tyagigarv90@gmail.com" class="soc-link soc-sm" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Garv Tyagi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
